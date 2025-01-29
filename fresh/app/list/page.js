@@ -28,14 +28,17 @@ export default function List() {
                 })
             }
             <h4 className="title">상품목록</h4>
-
-            <span>{products[0]}</span>
-            <button onClick={() => {
-                let copy = [...cnts] //참조값만 js는 저장하고 useState는 동일한 값인 경우 변경 X
-                copy[0]++
-                setCnts(copy)
-            }}>+
-            </button>
+            <div className="food" key='10'>
+                <span>{products[0]}</span>
+                <button onClick={() => {
+                    let copy = [...cnts] //참조값만 js는 저장하고 useState는 동일한 값인 경우 변경 X
+                    copy[0]++
+                    setCnts(copy)
+                }}>+
+                </button>
+                <span>{cnts[0]}</span>
+            </div>
         </div>
+
     )
 }
