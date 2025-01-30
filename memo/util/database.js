@@ -1,5 +1,5 @@
 import { MongoClient } from 'mongodb'
-const url = 'mongodb://admin:1234@localhost:27017/admin'
+const url = 'mongodb://root:password@localhost:27017/mydatabase?authSource=admin'
 const options = { useNewUrlParser: true }
 let connectDB
 
